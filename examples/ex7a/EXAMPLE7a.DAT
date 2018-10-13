@@ -1,0 +1,198 @@
+TITLE
+Case 1
+DENCON        GRAVITY       ENERGY        MIXTURE       THRUST        STEADY        TRANSV
+F             F             T             F             F             T             F
+INERTIA       CONDX         TWOD          PRINTI        ROTATION      BUOYANCY      HRATE
+T             F             F             F             T             F             F
+NNODES        NINT          NBR           NF            NHREF
+ 13            11            12            1             2 
+RELAXK        RELAXD        RELAXH
+ 1             0.5           1 
+NFLUID(I), I=1,NF
+11    
+NODE          INDEX
+ 1             2 
+ 2             1 
+ 3             1 
+ 4             1 
+ 5             1 
+ 6             1 
+ 7             1 
+ 8             1 
+ 9             1 
+ 10            1 
+ 11            1 
+ 12            1 
+ 13            2 
+PRESSURE      TEMPERATURE
+ 1            .9000E+02     .8000E+02     .0000E+00     .0000E+00     .0000E+00
+ 2            .8500E+02     .8000E+02     .0000E+00     .0000E+00     .0000E+00
+ 3            .8000E+02     .8000E+02     .0000E+00     .0000E+00     .0000E+00
+ 4            .7500E+02     .8000E+02     .0000E+00     .0000E+00     .0000E+00
+ 5            .7000E+02     .8000E+02     .0000E+00     .0000E+00     .0000E+00
+ 6            .6500E+02     .8000E+02     .0000E+00     .0000E+00     .0000E+00
+ 7            .6000E+02     .8000E+02     .0000E+00     .0000E+00     .0000E+00
+ 8            .5500E+02     .8000E+02     .0000E+00     .0000E+00     .0000E+00
+ 9            .5000E+02     .8000E+02     .0000E+00     .0000E+00     .0000E+00
+ 10           .4500E+02     .8000E+02     .0000E+00     .0000E+00     .0000E+00
+ 11           .4000E+02     .8000E+02     .0000E+00     .0000E+00     .0000E+00
+ 12           .3500E+02     .8000E+02     .0000E+00     .0000E+00     .0000E+00
+ 13           .3000E+02     .8000E+02     .0000E+00     .0000E+00     .0000E+00
+INODE         NUMBR         NAMEBR
+ 2             2            12    23    
+ 3             2            23    34    
+ 4             2            34    45    
+ 5             2            45    56    
+ 6             2            56    67    
+ 7             2            67    78    
+ 8             2            78    89    
+ 9             2            89    910   
+ 10            2            910   1011  
+ 11            2            1011  1112  
+ 12            2            1112  1213  
+BRANCH        UNODE         DNODE         OPTION
+ 12            1             2             2 
+ 23            2             3             2 
+ 34            3             4             2 
+ 45            4             5             2 
+ 56            5             6             2 
+ 67            6             7             2 
+ 78            7             8             2 
+ 89            8             9             2 
+ 910           9             10            2 
+ 1011          10            11            2 
+ 1112          11            12            2 
+ 1213          12            13            2 
+BRANCH        OPTION -2     FLOW COEFF    AREA
+ 12                         0.00000       3.14159
+BRANCH        OPTION -2     FLOW COEFF    AREA
+ 23                         0.00000       1.80415
+BRANCH        OPTION -2     FLOW COEFF    AREA
+ 34                         0.00000       3.22181
+BRANCH        OPTION -2     FLOW COEFF    AREA
+ 45                         0.00000       4.67676
+BRANCH        OPTION -2     FLOW COEFF    AREA
+ 56                         0.00000       5.72314
+BRANCH        OPTION -2     FLOW COEFF    AREA
+ 67                         0.00000       6.20628
+BRANCH        OPTION -2     FLOW COEFF    AREA
+ 78                         0.00000       68.32968
+BRANCH        OPTION -2     FLOW COEFF    AREA
+ 89                         0.00000       6.20628
+BRANCH        OPTION -2     FLOW COEFF    AREA
+ 910                        0.00000       5.72314
+BRANCH        OPTION -2     FLOW COEFF    AREA
+ 1011                       0.00000       4.67676
+BRANCH        OPTION -2     FLOW COEFF    AREA
+ 1112                       0.00000       3.46056
+BRANCH        OPTION -2     FLOW COEFF    AREA
+ 1213                       0.00000       6.22999
+BRANCH        NOUBR         NMUBR
+ 12            0            
+ 23            1            12    
+ 34            1            23    
+ 45            1            34    
+ 56            1            45    
+ 67            1            56    
+ 78            1            67    
+ 89            1            78    
+ 910           1            89    
+ 1011          1            910   
+ 1112          1            1011  
+ 1213          1            1112  
+BRANCH        NODBR         NMDBR
+ 12            1            23    
+ 23            1            34    
+ 34            1            45    
+ 45            1            56    
+ 56            1            67    
+ 67            1            78    
+ 78            1            89    
+ 89            1            910   
+ 910           1            1011  
+ 1011          1            1112  
+ 1112          1            1213  
+ 1213          0            
+BRANCH
+ 12 
+UPSTREAM ANGLE
+DOWNSTREAM ANGLE
+ 23           90.0000
+BRANCH
+ 23 
+UPSTREAM ANGLE
+ 12           90.0000
+DOWNSTREAM ANGLE
+ 34           0.0000
+BRANCH
+ 34 
+UPSTREAM ANGLE
+ 23           0.0000
+DOWNSTREAM ANGLE
+ 45           0.0000
+BRANCH
+ 45 
+UPSTREAM ANGLE
+ 34           0.0000
+DOWNSTREAM ANGLE
+ 56           0.0000
+BRANCH
+ 56 
+UPSTREAM ANGLE
+ 45           0.0000
+DOWNSTREAM ANGLE
+ 67           0.0000
+BRANCH
+ 67 
+UPSTREAM ANGLE
+ 56           0.0000
+DOWNSTREAM ANGLE
+ 78           90.0000
+BRANCH
+ 78 
+UPSTREAM ANGLE
+ 67           90.0000
+DOWNSTREAM ANGLE
+ 89           90.0000
+BRANCH
+ 89 
+UPSTREAM ANGLE
+ 78           90.0000
+DOWNSTREAM ANGLE
+ 910          0.0000
+BRANCH
+ 910 
+UPSTREAM ANGLE
+ 89           0.0000
+DOWNSTREAM ANGLE
+ 1011         0.0000
+BRANCH
+ 1011 
+UPSTREAM ANGLE
+ 910          0.0000
+DOWNSTREAM ANGLE
+ 1112         0.0000
+BRANCH
+ 1112 
+UPSTREAM ANGLE
+ 1011         0.0000
+DOWNSTREAM ANGLE
+ 1213         90.0000
+BRANCH
+ 1213 
+UPSTREAM ANGLE
+ 1112         90.0000
+DOWNSTREAM ANGLE
+NUMBER OF ROTATING BRANCH
+ 9 
+BRANCH        RADU          RADD          RPM           AKROT
+ 23           .1250E+01     .2250E+01     .5000E+04     .8671E+00
+ 34           .2250E+01     .3625E+01     .5000E+04     .8158E+00
+ 45           .3625E+01     .4688E+01     .5000E+04     .7630E+00
+ 56           .4688E+01     .5375E+01     .5000E+04     .7252E+00
+ 67           .5375E+01     .5500E+01     .5000E+04     .7076E+00
+ 89           .5500E+01     .5375E+01     .5000E+04     .7129E+00
+ 910          .5375E+01     .4688E+01     .5000E+04     .7349E+00
+ 1011         .4688E+01     .3625E+01     .5000E+04     .7824E+00
+ 1112         .3625E+01     .2650E+01     .5000E+04     .8376E+00
+

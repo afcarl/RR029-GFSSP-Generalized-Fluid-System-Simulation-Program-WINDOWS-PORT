@@ -1,0 +1,131 @@
+  **** GENERAL FLUID SYSTEM SIMULATION PROGRAM ****
+  ****************** VERSION 1.4.1 ****************
+   
+  TITLE     :Case 1                                                                          
+  DATE      :10/13/18       
+  ANALYST   :Joe Blow                      
+  FILEIN    :EXAMPLE7a.DAT  
+  FILEOUT   :example7a.out  
+   LOGICAL VARIABLES
+  DENCON   =  F
+  GRAVITY  =  F
+  ENERGY   =  T
+  MIXTURE  =  F
+  THRUST   =  F
+  STEADY   =  T
+  TRANSV   =  F
+  INERTIA  =  T
+  CONDX    =  F
+  TWOD     =  F
+  PRINTI   =  F
+  ROTATION =  T
+  BUOYANCY =  F
+  HRATE    =  F
+
+
+  NNODES   =   13
+  NINT     =   11
+  NBR      =   12
+  NF       =    1
+  NVAR     =   23
+  NHREF    =    2
+
+
+  FLUIDS: H2O  
+  
+ BOUNDARY NODES
+  NODE       P         T       RHO        AREA
+           (PSI)      (F)   (LBM/FT^3)   (IN^2)
+     1     90.0000   80.0000   62.2367    0.0000
+    13     30.0000   80.0000   62.2250    0.0000
+  
+  INPUT SPECIFICATIONS FOR INTERNAL NODES 
+ NODE       AREA      MASS      HEAT
+ NODE      (IN^2)    (LBM/S)  (BTU/LBM)
+     2      0.0000    0.0000    0.0000
+     3      0.0000    0.0000    0.0000
+     4      0.0000    0.0000    0.0000
+     5      0.0000    0.0000    0.0000
+     6      0.0000    0.0000    0.0000
+     7      0.0000    0.0000    0.0000
+     8      0.0000    0.0000    0.0000
+     9      0.0000    0.0000    0.0000
+    10      0.0000    0.0000    0.0000
+    11      0.0000    0.0000    0.0000
+    12      0.0000    0.0000    0.0000
+  
+ BRANCH   UPNODE    DNNODE    OPTION 
+    12         1         2         2
+    23         2         3         2
+    34         3         4         2
+    45         4         5         2
+    56         5         6         2
+    67         6         7         2
+    78         7         8         2
+    89         8         9         2
+   910         9        10         2
+  1011        10        11         2
+  1112        11        12         2
+  1213        12        13         2
+ BRANCH OPTION -2:  FLOW COEF, AREA
+    12     0.00000     3.14159
+ BRANCH OPTION -2:  FLOW COEF, AREA
+    23     0.00000     1.80415
+ BRANCH OPTION -2:  FLOW COEF, AREA
+    34     0.00000     3.22181
+ BRANCH OPTION -2:  FLOW COEF, AREA
+    45     0.00000     4.67676
+ BRANCH OPTION -2:  FLOW COEF, AREA
+    56     0.00000     5.72314
+ BRANCH OPTION -2:  FLOW COEF, AREA
+    67     0.00000     6.20628
+ BRANCH OPTION -2:  FLOW COEF, AREA
+    78     0.00000    68.32968
+ BRANCH OPTION -2:  FLOW COEF, AREA
+    89     0.00000     6.20628
+ BRANCH OPTION -2:  FLOW COEF, AREA
+   910     0.00000     5.72314
+ BRANCH OPTION -2:  FLOW COEF, AREA
+  1011     0.00000     4.67676
+ BRANCH OPTION -2:  FLOW COEF, AREA
+  1112     0.00000     3.46056
+ BRANCH OPTION -2:  FLOW COEF, AREA
+  1213     0.00000     6.22999
+  
+  
+  
+ SOLUTION
+ INTERNAL NODES
+  NODE     P(PSI)     T(F)        Z        RHO      QUALITY
+   (LBM/FT^3)
+     2     90.0000   80.0000    0.0045   62.2362    0.0000
+     3     -1.2084   80.0000    0.0040   62.2348    0.0000
+     4     90.0221   80.0003    0.0045   62.2353    0.0000
+     5    159.1236   79.8117    0.0080   62.2423    0.0000
+     6    206.9161   79.6808    0.0103   62.2471    0.0000
+     7    216.0908   79.6537    0.0108   62.2476    0.0000
+     8    216.0862   79.6557    0.0108   62.2471    0.0000
+     9    207.2347   79.6795    0.0104   62.2457    0.0000
+    10    166.6212   79.7911    0.0083   62.2407    0.0000
+    11     95.0704   79.9859    0.0048   62.2324    0.0000
+    12     33.3396   80.1550    0.0017   62.2251    0.0000
+  
+ BRANCHES
+ BRANCH       KFACTOR       DELP        FLOW RATE VELOCITY   REYN. NO.   MACH NO
+ .
+       (LBF-S^2/(LBM-FT)^2) (PSI)      (LBM/SEC)     (FT/SEC)
+    12       0.000E+00     0.000E+00   0.570E+02     0.420E+02   0.754E+06   0.342E-01
+    23       0.000E+00     0.912E+02   0.570E+02     0.731E+02   0.996E+06   0.595E-01
+    34       0.000E+00    -0.912E+02   0.570E+02     0.409E+02   0.745E+06   0.333E-01
+    45       0.000E+00    -0.691E+02   0.570E+02     0.282E+02   0.618E+06   0.230E-01
+    56       0.000E+00    -0.478E+02   0.570E+02     0.230E+02   0.558E+06   0.188E-01
+    67       0.000E+00    -0.917E+01   0.570E+02     0.212E+02   0.535E+06   0.173E-01
+    78       0.000E+00     0.453E-02   0.570E+02     0.193E+01   0.161E+06   0.157E-02
+    89       0.000E+00     0.885E+01   0.570E+02     0.212E+02   0.535E+06   0.173E-01
+   910       0.000E+00     0.406E+02   0.570E+02     0.230E+02   0.557E+06   0.188E-01
+  1011       0.000E+00     0.716E+02   0.570E+02     0.282E+02   0.617E+06   0.230E-01
+  1112       0.000E+00     0.617E+02   0.570E+02     0.381E+02   0.719E+06   0.310E-01
+  1213       0.000E+00     0.334E+01   0.570E+02     0.212E+02   0.537E+06   0.173E-01
+
+
+  SOLUTION SATISFIED CONVERGENCE CRITERION OF  0.00100 IN    9 ITERATIONS

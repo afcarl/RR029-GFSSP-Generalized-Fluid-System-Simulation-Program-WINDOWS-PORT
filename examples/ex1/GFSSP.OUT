@@ -1,0 +1,50 @@
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            1 KMAX=           14 RSDMAX =    1.000000     DIFMAX =   0.3616309    
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            1 KMAX=           15 RSDMAX =   3.8499996E-02 DIFMAX =   1.4299338E-02
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            1 KMAX=           15 RSDMAX =   2.5142339E-04 DIFMAX =   9.4824143E-05
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            1 KMAX=           14 RSDMAX =   1.1238255E-07 DIFMAX =   3.9846331E-08
+ ITER(RESISTANCE)=            1 ITER(NEWTON-RAPHSON)=            4
+ DIFK =    1.000000     DIFD =   0.0000000E+00 DIFH =   0.0000000E+00
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            2 KMAX=           15 RSDMAX =    1.124019     DIFMAX =    1.375340    
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            2 KMAX=            5 RSDMAX =    2.436032     DIFMAX =   0.9998623    
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            2 KMAX=           17 RSDMAX =    4636.733     DIFMAX =    1.000382    
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            2 KMAX=           19 RSDMAX =    1203.237     DIFMAX =   0.9989063    
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            2 KMAX=           19 RSDMAX =    299.8258     DIFMAX =   0.9922182    
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            2 KMAX=           19 RSDMAX =    74.64317     DIFMAX =   0.9667069    
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            2 KMAX=           20 RSDMAX =    18.34809     DIFMAX =   0.8744429    
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            2 KMAX=           21 RSDMAX =    4.273571     DIFMAX =   0.6172941    
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            2 KMAX=           21 RSDMAX =   0.8136714     DIFMAX =   0.2346611    
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            2 KMAX=           21 RSDMAX =   7.6985553E-02 DIFMAX =   2.8190199E-02
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            2 KMAX=           21 RSDMAX =   1.0186682E-03 DIFMAX =   3.8356864E-04
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            2 KMAX=            7 RSDMAX =   2.6239198E-07 DIFMAX =   8.9531987E-08
+ ITER(RESISTANCE)=            2 ITER(NEWTON-RAPHSON)=           12
+ DIFK =   0.6193539     DIFD =   5.0578714E-05 DIFH =   1.9073486E-06
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            3 KMAX=           22 RSDMAX =   4.0329285E-02 DIFMAX =   1.5425682E-02
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            3 KMAX=           22 RSDMAX =   3.3689488E-04 DIFMAX =   1.2687371E-04
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            3 KMAX=            1 RSDMAX =   1.3762472E-07 DIFMAX =   2.8472247E-08
+ ITER(RESISTANCE)=            3 ITER(NEWTON-RAPHSON)=            3
+ DIFK =   2.8828455E-03 DIFD =   2.6481292E-05 DIFH =   1.9073486E-06
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            4 KMAX=           22 RSDMAX =   1.1234635E-04 DIFMAX =   4.2319116E-05
+    VARIABLE                VALUE  CHANGE FROM PREVIOUS
+ ITER =            4 KMAX=            2 RSDMAX =   9.1635428E-08 DIFMAX =   3.0324841E-08
+ ITER(RESISTANCE)=            4 ITER(NEWTON-RAPHSON)=            2
+ DIFK =   1.4227498E-05 DIFD =   1.3515677E-05 DIFH =   1.9073486E-06
